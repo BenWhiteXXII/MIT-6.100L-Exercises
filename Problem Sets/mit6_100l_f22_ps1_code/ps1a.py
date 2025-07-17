@@ -28,6 +28,5 @@ while amount_saved < (cost_of_dream_home * portion_down_payment):
     amount_saved = amount_saved * (1 + (r/12))
     amount_saved = amount_saved + ((yearly_salary/12) * portion_saved)
     months = months + 1
-    print(months, amount_saved)
 
 print("Number of months: ", months)

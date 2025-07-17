@@ -18,9 +18,7 @@ def part_b(yearly_salary, portion_saved, cost_of_dream_home, semi_annual_raise):
 	    months = months + 1
 	    if (months // 6) > times_raised:
 	        yearly_salary = yearly_salary * (1 + semi_annual_raise)
-	        print(yearly_salary)
 	        times_raised += 1
-	    print(months, amount_saved)
 	
 	print("Number of months: ", months)
 	return months

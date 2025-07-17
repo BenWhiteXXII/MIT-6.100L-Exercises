@@ -34,8 +34,6 @@ while amount_saved < (cost_of_dream_home * portion_down_payment):
     months = months + 1
     if (months // 6) > times_raised:
         yearly_salary = yearly_salary * (1 + semi_annual_raise)
-        print(yearly_salary)
         times_raised += 1
-    print(months, amount_saved)
 
 print("Number of months: ", months)

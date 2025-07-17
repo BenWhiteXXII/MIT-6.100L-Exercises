@@ -22,14 +22,14 @@ if student_a:
 	cost_of_dream_home = 750000
 	actual = 97
 	student = student_a.part_a(yearly_salary, portion_saved, cost_of_dream_home)
-	if actual != student: 
+	if actual != student:
 		print('FAILED')
 		print("Part A test 1 failed. Correct answer:", actual, "Your answer:", student)
-	else: 
+	else:
 		print('PASSED')
 		tests_passed += 1
 		a_tests +=1
-		
+
 	print('----PART A Test 2----')
 	print('RUNNING with yearly_salary: 65000, portion_saved: .20, cost_of_dream_home: 400000')
 	yearly_salary = 65000
@@ -37,10 +37,10 @@ if student_a:
 	cost_of_dream_home = 400000
 	actual = 79
 	student = student_a.part_a(yearly_salary, portion_saved, cost_of_dream_home)
-	if actual != student: 
+	if actual != student:
 		print("FAILED")
-		print("Part A test 2 failed. Correct answer:", actual, "Your answer:", student)	
-	else: 
+		print("Part A test 2 failed. Correct answer:", actual, "Your answer:", student)
+	else:
 		print("PASSED")
 		tests_passed += 1
 		a_tests +=1
@@ -53,11 +53,11 @@ if student_a:
 	actual = 189
 	student = student_a.part_a(yearly_salary, portion_saved, cost_of_dream_home)
 	if actual != student:
-		print("FAILED") 
+		print("FAILED")
 		print("Part A test 3 failed. Correct answer:", actual, "Your answer:", student)
 
 	else:
-		print("PASSED") 
+		print("PASSED")
 		tests_passed += 1
 		a_tests += 1
 
@@ -71,9 +71,9 @@ if student_b:
 	actual = 92
 	student = student_b.part_b(yearly_salary, portion_saved, cost_of_dream_home, semi_annual_raise)
 	if actual != student:
-		print("FAILED") 
+		print("FAILED")
 		print("Part B test 1 failed. Correct answer:", actual, "Your answer:", student)
-	else: 
+	else:
 		print("PASSED")
 		tests_passed += 1
 		b_tests +=1
@@ -88,11 +88,11 @@ if student_b:
 	semi_annual_raise = .05
 	actual = 131
 	student = student_b.part_b(yearly_salary, portion_saved, cost_of_dream_home, semi_annual_raise)
-	if actual != student: 
+	if actual != student:
 		print("FAILED")
 		print("Part B test 2 failed. Correct answer:", actual, "Your answer:", student)
 
-	else: 
+	else:
 		print("PASSED")
 		tests_passed += 1
 		b_tests += 1
@@ -114,7 +114,7 @@ if student_c:
 		print("FAILED")
 		print("Part C Test 1 failed. Either your r value", student_r, "does not produce the correct savings, or your algorithm takes too few or too many steps. Expected answer:", actual_r, "in", actual_steps, "steps")
 
-	else: 
+	else:
 		print("PASSED")
 		tests_passed += 1
 		c_tests += 1
@@ -122,17 +122,17 @@ if student_c:
 
 
 	print('----PART C Test 2----')
-	print('RUNNING with initial_deposit: 187401')
-	initial_deposit = 187401
-	actual_r = 0.021728515625
-	actual_steps = 12
+	print('RUNNING with initial_deposit: 150000')
+	initial_deposit = 150000
+	actual_r = 0.09619140625
+	actual_steps = 11
 	student_r, student_steps = student_c.part_c(initial_deposit)
 	student_savings = initial_deposit * (1 + student_r / 12) ** months
 	if type(student_r) == str or student_steps != actual_steps:
 		print("FAILED")
 		print("Part C Test 2 failed. Either your r value", student_r, "does not produce the correct savings, or your algorithm takes too few or too many steps. Expected answer:", actual_r, "in", actual_steps, "steps")
 
-	else: 
+	else:
 		print("PASSED")
 		tests_passed += 1
 		c_tests += 1
@@ -147,7 +147,7 @@ if student_c:
 		print("FAILED")
 		print("Part C test 3 failed. Correct answer:", actual_r, "your_answer", student_r)
 
-	else: 
+	else:
 		print("PASSED")
 		tests_passed += 1
 		c_tests += 1
