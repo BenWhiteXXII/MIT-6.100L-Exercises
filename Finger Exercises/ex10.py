@@ -5,6 +5,21 @@ def all_true(n, Lf):
     with n as a parameter. Otherwise returns False.
     """
     # Your code here
+    for f in Lf:
+        if not f(n):
+            return f(n)
+    return True
 
+# def func_a(n):
+#     if n == 5:
+#         return True
+#     else:
+#         return False
+
+# def func_b(n):
+#     if n == 6:
+#         return True
+#     else:
+#         return False
 # Examples:
-all_true() # prints 6
+print(all_true(6, [func_a, func_b]))
