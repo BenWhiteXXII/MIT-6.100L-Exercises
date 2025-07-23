@@ -54,7 +54,9 @@ def get_frequencies(input_iterable):
     """
 
     freq_dict = {}
-    for elem in text_to_list(input_iterable):
+    if type(input_iterable) == str:
+        input_iterable = text_to_list(input_iterable)
+    for elem in input_iterable:
         if elem not in freq_dict:
             freq_dict[elem] = 1
         else:
@@ -126,7 +128,6 @@ def calculate_similarity_score(freq_dict1, freq_dict2):
         if elem not in longest_dict:
             total += shortest_dict[elem]
             diff_total += shortest_dict[elem]
-    print(f'total = {total}, diff_total = {diff_total}')
     return round((1 - (diff_total / total)), 2)
 
 ### Problem 4: Most Frequent Word(s) ###
