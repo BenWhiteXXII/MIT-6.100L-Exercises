@@ -6,9 +6,9 @@ def power_recur(n, p):
     elif p == 1:
         return n
     else:
-        return power_recur(n*n,p-1)
+        return n * power_recur(n,p-1)
 
-print(power_recur(2, 3))
+print(power_recur(2, 5))
 
 # know that x^1 = x
 # if x = 2, p = 3
